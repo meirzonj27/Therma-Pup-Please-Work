@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ThermaPup | K9HeatGuard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <img src="thermapup-logo.png" alt="ThermaPup logo" class="logo-image" />
+        <div class="logo-text">
+          <span class="logo-company">ThermaPup</span>
+          <span class="logo-tagline">“Because every degree matters”</span>
+        </div>
+      </div>
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#product">Background Research &amp; Problem Definition</a></li>
+          <li><a href="#how-it-works">Ideate Solution</a></li>
+          <li><a href="#process">Final Engineering Design</a></li>
+          <li><a href="#science">Test &amp; Reflect</a></li>
+          <li><a href="#team">The Team</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>K9HeatGuard by ThermaPup</h1>
+          <p class="hero-subtitle">
+            A smart wearable that monitors your dog’s temperature and vitals,
+            sending real-time text alerts so you can prevent overheating before it happens.
+          </p>
+          <div class="hero-cta">
+            <a href="#product" class="btn primary">Explore the product</a>
+            <a href="#process" class="btn secondary">See our STEM process</a>
+          </div>
+          <div class="hero-note">
+            Designed as a STEM project to tackle a real-world problem: heat stress in dogs.
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="device-card">
+            <div class="device-dog">
+              <div class="dog-icon">🐾</div>
+              <div class="dog-name">Buddy · Medium Breed</div>
+            </div>
+            <div class="device-stats">
+              <div class="stat">
+                <span class="stat-label">Core temp</span>
+                <span class="stat-value ok">101.8°F</span>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Heart rate</span>
+                <span class="stat-value ok">85 bpm</span>
+              </div>
+              <div class="stat">
+                <span class="stat-label">Activity</span>
+                <span class="stat-value">Light play</span>
+              </div>
+            </div>
+            <div class="device-alert">
+              <span class="dot"></span>
+              Text to owner: “All clear. Buddy’s temperature is in the safe zone.”
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKGROUND RESEARCH & PROBLEM DEFINITION -->
+    <section id="product" class="section section-alt">
+      <div class="container two-column">
+        <div>
+          <h2>Background Research &amp; Problem Definition</h2>
+          <p>
+            Every summer, news stories remind us that dogs can overheat in minutes, yet
+            many guardians only notice trouble when a pet is already panting heavily,
+            stumbling, or refusing to walk. Unlike people, dogs lose heat mainly through
+            panting and limited paw-pad sweating, so temperature can climb fast during
+            ordinary activities: a sunny walk, agility practice, or a few minutes in a
+            parked car. Our team studied this gap between <em>risk rising</em> and
+            <em>human awareness</em> because early action saves lives, reduces emergency
+            vet visits, and gives families confidence when they bring dogs into the real
+            world.
+          </p>
+          <p>
+            The problem we are solving is not “knowing heat exists,” but
+            <strong>detecting dangerous trends early and communicating them clearly</strong>
+            to the person who can intervene. K9HeatGuard is our engineering response: a
+            wearable path to continuous monitoring and timely alerts so owners can move a
+            dog to shade, offer water, slow activity, or seek professional care before a
+            crisis.
+          </p>
+
+          <h3>Problem Definition (Thesis Statement)</h3>
+          <p>
+            Situations where dogs are involved in heat-related emergencies are often
+            preventable if owners receive time-accurate warnings, so we created our
+            product, K9HeatGuard, as a real-time alerting wearable dog collar to support
+            safer decisions under stress.
+          </p>
+
+          <h3>Relevant Statistics</h3>
+          <p>
+            The points below summarize widely cited veterinary guidance and physiology
+            we used to frame safe ranges and urgency in our design (sources: veterinary
+            health organizations and clinic education materials).
+          </p>
+          <ul>
+            <li>
+              <strong>Cooling limitation:</strong> Dogs depend heavily on panting; they
+              cannot regulate body temperature the way humans do with full-body sweat.
+            </li>
+            <li>
+              <strong>Typical resting range:</strong> Many clinics cite roughly
+              <strong>101–102.5°F</strong> as a common resting temperature band for dogs,
+              with context depending on breed, activity, and environment.
+            </li>
+            <li>
+              <strong>Elevated risk:</strong> Sustained readings around
+              <strong>103°F and above</strong> warrant attention; <strong>104°F+</strong>
+              is often treated as a red flag to cool the dog and contact a veterinarian,
+              especially with symptoms such as weakness, vomiting, or collapse.
+            </li>
+            <li>
+              <strong>Time sensitivity:</strong> Heat stress can escalate quickly; rapid
+              owner response (shade, airflow, cool—not ice-cold—water, veterinary advice)
+              improves outcomes.
+            </li>
+          </ul>
+
+          <h3>Target Market Demographics</h3>
+          <p>We organized likely users so our product story, alerts, and testing scenarios stay realistic.</p>
+          <ul>
+            <li>
+              <strong>Primary households:</strong> Suburban and urban dog owners in
+              warm seasons (including New Jersey heat waves), especially those who walk
+              dogs daily, visit dog parks, hike, or travel by car.
+            </li>
+            <li>
+              <strong>Activity-heavy segments:</strong> Owners of working breeds, sport
+              dogs, and “weekend athletes” whose dogs ramp up intensity quickly.
+            </li>
+            <li>
+              <strong>Secondary professionals:</strong> Trainers, groomers, sitters, and
+              shelter staff who manage groups of dogs outdoors or in variable AC.
+            </li>
+            <li>
+              <strong>Informed allies:</strong> Veterinarians and vet-tech teams who set
+              expectations for what wearables can and cannot replace (screening tool, not
+              a diagnosis).
+            </li>
+          </ul>
+
+          <h3>Potential User Survey Results</h3>
+          <p>
+            To ground K9HeatGuard in real needs, we collected feedback through surveys
+            coordinated with <strong>teachers at Golda Och Academy (GOA)</strong> and
+            <strong>veterinarians in the New Jersey area</strong> who generously shared
+            time and expertise. Themes that rose to the top included: worry during
+            midday walks and car transitions; desire for <strong>plain-language alerts</strong>
+            (what is wrong, what to do next); interest in a collar-mounted option that
+            does not get in the way of play; and repeated emphasis that any device must
+            <strong>respect veterinary limits</strong>—clear escalation guidance rather
+            than replacing a clinic exam.
+          </p>
+          <p>
+            Those responses directly shaped our alert wording, our focus on continuous
+            monitoring over one-off checks, and our emphasis on early warning rather than
+            “diagnosis.”
+          </p>
+        </div>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Veterinary survey: car heat timeline</h3>
+            <figure class="research-chart">
+              <img
+                src="survey-vet-car-heat-timing.png"
+                alt="Pie chart: New Jersey veterinarians, 9 responses, on how quickly a parked car can reach dangerous temperatures for dogs."
+                loading="lazy"
+              />
+              <figcaption class="chart-caption">
+                Professional survey (9 responses): how fast a car’s interior can become dangerous for dogs—supports the need for time-accurate warnings.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="feature-card">
+            <h3>Community survey: dogs in the car</h3>
+            <figure class="research-chart">
+              <img
+                src="survey-q1-dog-in-car.png"
+                alt="Pie chart: 31 responses to how often respondents take their dog in the car."
+                loading="lazy"
+              />
+              <figcaption class="chart-caption">
+                31 responses: frequency of bringing dogs along in vehicles—context for when in-car heat risk matters.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="feature-card">
+            <h3>Community survey: current safety methods</h3>
+            <figure class="research-chart">
+              <img
+                src="survey-q5-safety-methods.png"
+                alt="Horizontal bar chart: 31 responses on methods or devices used to keep the respondent and their dog safe."
+                loading="lazy"
+              />
+              <figcaption class="chart-caption">
+                31 responses: methods and devices owners already use—highlights the gap for dedicated temperature monitoring like K9HeatGuard.
+              </figcaption>
+            </figure>
+          </div>
+          <div class="feature-card">
+            <h3>Community survey: year-round vs. seasonal use</h3>
+            <figure class="research-chart">
+              <img
+                src="survey-q8-year-round-use.png"
+                alt="Pie chart: 31 responses on whether respondents would use the product only in summer or year round."
+                loading="lazy"
+              />
+              <figcaption class="chart-caption">
+                31 responses: interest in using protection beyond summer alone—aligns with always-on alerting and health monitoring.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="section">
+      <div class="container">
+        <h2>Ideate Solution</h2>
+        <p class="section-intro">
+          This section shows how we moved from brainstorming to a selected design using
+          user feedback, research, and a decision matrix.
+        </p>
+
+        <div class="steps-grid">
+          <div class="step">
+            <h3>Key Design Goals (Solution Requirements)</h3>
+            <ul>
+              <li>Detect heat risk early with readings that update in real time.</li>
+              <li>Send clear alerts fast enough for owners to take action.</li>
+              <li>Keep the device lightweight, durable, and comfortable on a collar.</li>
+              <li>Support daily use in cars, walks, and outdoor activities.</li>
+              <li>Use an approach that can scale to app integration in future versions.</li>
+            </ul>
+          </div>
+
+          <div class="step">
+            <h3>Competitors/Existing Solutions</h3>
+            <p>
+              We reviewed three direct competitors to understand strengths, gaps, and how
+              K9HeatGuard can be more practical for families.
+            </p>
+            <figure class="research-chart">
+              <img src="competitor-petpace.png" alt="Competitor analysis: PetPace." loading="lazy" />
+              <figcaption class="chart-caption">Competitor 1: PetPace.</figcaption>
+            </figure>
+            <figure class="research-chart">
+              <img src="competitor-invoxia.png" alt="Competitor analysis: Invoxia." loading="lazy" />
+              <figcaption class="chart-caption">Competitor 2: Invoxia.</figcaption>
+            </figure>
+            <figure class="research-chart">
+              <img src="competitor-tractive.png" alt="Competitor analysis: Tractive." loading="lazy" />
+              <figcaption class="chart-caption">Competitor 3: Tractive.</figcaption>
+            </figure>
+          </div>
+
+          <div class="step">
+            <h3>Potential Solutions</h3>
+            <p>
+              Below are our first three potential solution sketches from brainstorming.
+            </p>
+            <div class="potential-solutions-row">
+              <figure class="research-chart">
+                <img src="ideate-potential-solution-1.png" alt="Potential Solution sketch 1." loading="lazy" />
+                <figcaption class="chart-caption">Potential Solution #1</figcaption>
+              </figure>
+              <figure class="research-chart">
+                <img src="ideate-potential-solution-2.png" alt="Potential Solution sketch 2." loading="lazy" />
+                <figcaption class="chart-caption">Potential Solution #2</figcaption>
+              </figure>
+              <figure class="research-chart">
+                <img src="ideate-potential-solution-3.png" alt="Potential Solution sketch 3." loading="lazy" />
+                <figcaption class="chart-caption">Potential Solution #3</figcaption>
+              </figure>
+            </div>
+          </div>
+
+          <div class="step">
+            <h3>Chosen Design</h3>
+            <p>
+              Our chosen design is <strong>Potential Solution #2</strong>. It gave us the
+              best balance of feasibility, effectiveness, and comfort while still allowing
+              real-time alerting and future improvements.
+            </p>
+          </div>
+        </div>
+
+        <div class="callout">
+          <h3>Decision Matrix (used to select design)</h3>
+          <figure class="research-chart">
+            <img src="decision-matrix-original.png" alt="Original team decision matrix used to compare potential solutions." loading="lazy" />
+            <figcaption class="chart-caption">
+              Original class decision matrix. Potential Solution #2 received the highest score and was selected.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="callout">
+          <h3>Competitive Advantage (why design is innovative)</h3>
+          <ul>
+            <li>Heat-specific focus instead of only location/activity tracking.</li>
+            <li>Actionable alerts that tell owners what to do next, not just raw numbers.</li>
+            <li>Built from direct GOA and New Jersey veterinarian feedback.</li>
+            <li>Cheaper than many competitors and does not require monthly subscriptions.</li>
+            <li>No charging needed: users can replace batteries quickly.</li>
+            <li>Designed to work 24/7 at all times.</li>
+          </ul>
+        </div>
+
+        <div class="callout">
+          <h3>Design changes based on feedback</h3>
+          <ul>
+            <li>Made alert wording shorter and more urgent for quick reading.</li>
+            <li>Prioritized comfort and secure placement so dogs can wear it longer.</li>
+            <li>Made the hole for the thermometer larger to improve reading accuracy.</li>
+            <li>Working on making the collar more comfortable and lighter.</li>
+            <li>Emphasized that the device supports—not replaces—veterinary care.</li>
+          </ul>
+        </div>
+
+        <figure class="research-chart">
+          <img
+            src="ideate-solution-rubric.png"
+            alt="Ideate Solution rubric showing minimum, standard, and superior expectations."
+            loading="lazy"
+          />
+          <figcaption class="chart-caption">
+            Ideation rubric reference used while structuring this section.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROCESS / STEM DESIGN -->
+    <section id="process" class="section section-alt">
+      <div class="container">
+        <h2>Final Engineering Design</h2>
+        <p class="section-intro">
+          K9HeatGuard started as a STEM class project. Our challenge was to use
+          engineering and technology to solve a real-world problem. Here’s how we
+          applied the engineering design process.
+        </p>
+
+        <div class="process-grid">
+          <article class="process-step">
+            <h3>1. Identify the problem</h3>
+            <p>
+              We researched how often dogs suffer from heat stroke and learned that
+              many cases happen because owners don’t realize their dog is overheating
+              until it’s too late.
+            </p>
+            <p>
+              We defined our problem as: <strong>“How can we give dog owners an
+              early warning before their pet’s temperature becomes dangerous?”</strong>
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3>2. Research & brainstorm</h3>
+            <p>
+              We studied basic canine biology, safe temperature ranges, and existing
+              pet wearables. We brainstormed ideas like cooling vests, smart bowls,
+              and sensor collars.
+            </p>
+            <p>
+              We chose a collar-mounted sensor because it would work in many
+              environments (indoors, outdoors, in the car, or at the park).
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3>3. Plan the solution</h3>
+            <p>
+              We sketched diagrams showing how sensors, the microcontroller, power
+              supply, and wireless connection would fit together.
+            </p>
+            <p>
+              We also planned what information the text alerts should include so
+              they would be clear and helpful during a stressful moment.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3>4. Build prototypes</h3>
+            <p>
+              Using classroom materials, we created a non-functioning physical model
+              of the collar attachment and a mocked-up phone screen showing sample
+              SMS alerts and data graphs.
+            </p>
+            <p>
+              If we were building a working prototype, we would use temperature
+              sensors, a microcontroller board, a battery, and an SMS or Bluetooth
+              module.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3>5. Test & improve</h3>
+            <p>
+              We tested our design by walking through real-life scenarios: hot days,
+              car rides, and high-energy play. We asked:
+            </p>
+            <ul>
+              <li>Would the owner get the alert early enough?</li>
+              <li>Are the instructions in the message easy to follow?</li>
+              <li>Is the collar comfortable and secure for the dog?</li>
+            </ul>
+            <p>
+              Based on feedback, we improved the wording of alerts and adjusted where
+              the sensor sits on the collar.
+            </p>
+          </article>
+
+          <article class="process-step">
+            <h3>6. Reflect & next steps</h3>
+            <p>
+              We reflected on what went well—such as identifying a real need—and
+              what we would improve with more time, like testing with more dog
+              sizes and fur types.
+            </p>
+            <p>
+              In a future version, we’d like to add a mobile app, GPS tracking, and
+              a vet dashboard for professional monitoring.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SCIENCE / SAFETY -->
+    <section id="science" class="section">
+      <div class="container two-column">
+        <div>
+          <h2>Test &amp; Reflect</h2>
+          <p>
+            Dogs can’t cool themselves as efficiently as humans. They mostly rely
+            on panting and a small amount of sweating through their paw pads.
+            Because of this, their body temperature can rise quickly in hot
+            environments.
+          </p>
+          <p>
+            Veterinarians say that a normal dog temperature is usually around
+            101–102.5°F. Temperatures above this range, especially over 104°F,
+            can be dangerous and may lead to heat exhaustion or heat stroke.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3>What K9HeatGuard Watches For</h3>
+          <ul class="info-list">
+            <li><strong>Rising core temperature</strong> beyond the normal safe range.</li>
+            <li><strong>Fast heart rate</strong> that could signal stress or overheating.</li>
+            <li><strong>Patterns over time</strong>, such as how quickly a dog heats up on a walk.</li>
+            <li><strong>Sudden spikes</strong> that might mean the dog is in trouble.</li>
+          </ul>
+          <p class="info-note">
+            K9HeatGuard is not meant to replace a veterinarian—it is designed to
+            help owners notice problems sooner.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section id="team" class="section section-alt">
+      <div class="container">
+        <h2>The Team</h2>
+        <p class="section-intro">
+          We are <strong>Jackson Meirzon</strong> and <strong>Avi Kutten</strong>, students
+          at <strong>Golda Och Academy (GOA)</strong> in New Jersey. Together we formed
+          <strong>ThermaPup</strong> and built <strong>K9HeatGuard</strong> as our STEM
+          engineering project—combining hardware, software, and clear communication so dog
+          owners can act sooner when heat risk rises.
+        </p>
+        <div class="team-grid">
+          <div class="team-card">
+            <h3>School</h3>
+            <p>
+              <strong>Golda Och Academy (GOA)</strong> — West Orange, New Jersey.
+            </p>
+          </div>
+          <div class="team-card">
+            <h3>Acknowledgements</h3>
+            <p>
+              We sincerely thank the <strong>teachers and staff at Golda Och Academy (GOA)</strong>
+              for supporting our project in and out of class—especially for helping us
+              distribute surveys and refine our presentation. We are also grateful to the
+              <strong>veterinarians across New Jersey</strong> who took time to complete our
+              surveys and share professional perspective; their answers helped us prioritize
+              alert wording, safety messaging, and realistic use cases so K9HeatGuard could
+              better reflect real-world care. Thank you as well to classmates and family who
+              gave feedback during brainstorming and testing, and to public veterinary
+              heat-safety resources that informed our background research.
+            </p>
+          </div>
+          <div class="team-card">
+            <h3>AI Citation</h3>
+            <p>
+              We used AI-assisted tools (for example, conversational assistants in Cursor) as
+              <strong>writing and organization aids</strong>: suggesting section structure,
+              tightening language, and catching unclear phrasing on this site. We did
+              <strong>not</strong> use AI to replace our engineering decisions—sensor choices,
+              code architecture, Fusion modeling, survey design, and final facts were ours.
+              We reviewed, edited, and verified all content for accuracy and honesty before
+              publishing.
+            </p>
+          </div>
+        </div>
+
+        <h3>Team members</h3>
+        <p class="section-intro">
+          Photos and responsibilities for each member are below.
+        </p>
+        <div class="creators-grid">
+          <article class="creator-card">
+            <div class="creator-photo">
+              <img src="jackson-meirzon.png" alt="Portrait of Jackson Meirzon" />
+            </div>
+            <div class="creator-body">
+              <h3 class="creator-name">Jackson Meirzon</h3>
+              <p class="creator-role">iPhone integration · Fusion · Website &amp; documentation</p>
+              <ul>
+                <li>Software path between the collar concept and iPhone-side integration (reliable data flow and compatibility considerations).</li>
+                <li>This website: layout, copy, and iterative edits for the STEM deliverable.</li>
+                <li>Project documentation and demo narrative alongside team research.</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="creator-card">
+            <div class="creator-photo">
+              <img src="avi-kutten.png" alt="Portrait of Avi Kutten" />
+            </div>
+            <div class="creator-body">
+              <h3 class="creator-name">Avi Kutten</h3>
+              <p class="creator-role">Sensors &amp; circuits · Fusion · Website visuals &amp; structure</p>
+              <ul>
+                <li>Temperature sensing: circuit ideas, code for reading sensors, and response behavior tied to heat thresholds.</li>
+                <li>Fusion 360 modeling for hardware form factor and how the module sits on a collar.</li>
+                <li>Website collaboration: structure, visuals, and consistency with the engineering story.</li>
+                <li>Hands-on testing discussions and refinement of what “alert-worthy” signals mean in practice.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>ThermaPup · K9HeatGuard · STEM Design Project</p>
+      <a href="#top" class="back-to-top">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
